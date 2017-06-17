@@ -1,0 +1,123 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="icon" href="imagens/favicon.png">
+  <title>Francisco Airton Silva, PhD</title>
+</head>
+
+<body class="" style="background-color:#CFCFCF;">
+  
+  <!--<div class="col-xs-6 col-sm-3 sidebar-offcanvas col-md-2" id="sidebar">
+    <div class="list-group"> <a href="#" class="list-group-item">Interesses</a> <a href="#" class="list-group-item">Publicações</a> <a href="#" class="list-group-item">Ensino</a> <a href="#" class="list-group-item">Vídeos</a> </div>
+  </div> -->
+  <!--/.sidebar-offcanvas-->
+
+  <div class="container">
+    <div class="jumbotron" style="background-color:white;">
+
+        <h4>Análise de Desempenho de uma Sistema Distribuído para Segmentação de Imagem da Retina</h4>
+
+        <p>
+            Neste trabalho apresentamos o desenvolvimento de um sistema mobile para segmentação de imagens
+            da retina em computação em nuvem. O sistema funciona primeiramente com a seleção de uma imagem
+            no dispositivo móvel, para posteriormente ser enviada ao servidor para realizar a segmentação da imagem.
+
+            Optou-se por utilizar esse arquitetura devido a limitação dos dispositivos móveis, como bateria,
+            processamento, e memória. Assim ao utilizar um servidor ele terá a funcionalidade de relizar as
+            operações de processamento digital de imagens e retornar os resultados, diminuindo assim as operações
+            no dispositivo móvel otimizando a aplicação sem comprometer os resultados.
+        </p>
+
+        <p>
+            Para o desenvolvimento da aplicação que se basea na arquitetura cliente-servidor, ou seja,
+            o cliente requisita e detém dados, e o servidor processa e faz a manutenção da informação.
+
+            Assim utilizamos as seguintes tecnologias:
+
+        </p>
+
+        <ul>
+
+            <ul> Linguagem java e SDK android </ul>
+
+            <ul> Middleware rabbitmq </ul>
+
+            <ul> Linguagem de programação python </ul>
+
+            <ul> Biblioteca OpenCV para manipulação de imagens </ul>
+
+        </ul>
+
+        <p>
+            A linguagem de programação java foi para programar em android para desenvolver a aplicação
+            mobile contanto com a IDE() Android Studio. O rabbitmq é um middle de troca de mensagens para
+            manter o controle, segurança, e entregas corretas das menssagens entre cliente e servidor.
+            Foi utilizado um middleware por estar envolvido diferentes plataformas e linguagens de programação
+            envolvidos, sendo necessário para a interação entre elas. A linguagem de programação python com a
+            biblioteca OpenCV é utilizada pora o processamento digital de imagens e geração de gráficos sobre
+            o desempenho da aplicação.
+
+        </p>
+
+        <h4> Funcionamento </h4>
+
+        <p>
+
+            No lado cliente com o celular android, o usuário pode selecionar a imagem em seu celular, e ao selecionar
+            um botão fica apto a enviar ao middleware no sevidor . No servidor a imagem é realizado por um pré-processamento
+            para a eliminação de ruídos, para posteriormente ser segmentada e retornada ao cliente. A imagem abaixo demostra
+            a interface no lado cliente.
+
+        </p>
+
+        <figure>
+            <img src="imagens/phone.jpg" alt="Seleção de Imagem no Cliente" title="Seleção da imagens no celular" width="200" height="355" />
+        </figure>
+
+        <p> Abaixo tem-se o resultado de uma segmentação com o algoritmo de segmentação Otsu</p>
+
+        <figure>
+            <img src="imagens/otsu_400_cinza_0.png" alt="Segmentação com Otsu" title="Seleção da imagens no celular" width="300" height="300" />
+        </figure>
+
+        <p> Abaixo tem-se o resultado de uma segmentação com o algoritmo de segmentação K-means</p>
+
+        <figure>
+            <img src="imagens/kmeans_400_cinza_0.png" alt="Segmentação com K-means" title="Seleção da imagens no celular" width="300" height="300" />
+        </figure>
+
+        <p> O link com os códigos e imagens podem ser feito o download em :
+            <a href="https://github.com/Marcos001/Segmentation/">códigos do servidor</a>
+            &
+            <a href="https://github.com/Marcos001/PIM">códigos do cliente.</a>
+        </p>
+        <!-- https://github.com/Marcos001/Segmentation -->
+
+
+
+
+
+        <!--
+        COLOQUE SEU PROJETO AQUI
+        DESCREVA A ARQUITETURA,
+        COLOQUE IMAGENS,
+        COMO FUNCIONA CADA COMPONENTE,
+        QUE TECNOLOGIAS USOU
+        E LINKS PARA BAIXAR OS CÓDIGOS USADOS.
+         -->
+	  
+      <hr> </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+</body>
+
+</html>
